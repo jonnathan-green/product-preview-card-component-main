@@ -2,20 +2,124 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Hanken Grotesk', sans-serif;
 }
 
-article{
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body{
+    background: var(--Cream);
+}
+
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
+
+
 .information{
     display: grid;
+    grid-template-rows: 1fr 1.5fr 1.5fr .8fr 1fr;
+    background: var(--White);
+    width: 20vw;
+    height: 58vh;
+    border-radius: 0px 20px 20px 0;
+    
+}
+
+.img{
+    display: flex;
+    width: 20vw;
+    height: 58vh;
+    
+    
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.perfume{
+    margin-top: 2.7em;
+    margin-left: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    opacity: .7;
+    font-weight: 500;
+    font-size: 1.1em;
+    letter-spacing: .1em;
+}
+
+.title{
+    font-size: 2.3em;
+    font-family: 'Fraunces', serif;
+    margin-left: 1.1em;
+    margin-right: 2em;
+    line-height: 1.2em;
+}
+
+.description{
+    font-size: 1.2em;
+    margin: 0.7em 2.3em 0 2.4em;
+    padding-right: 1em;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+    opacity: .6;
 }
 
 .prices{
     display: flex;
+}
+
+.big-price{
+    font-size: 2.5em;
+    font-family: 'Fraunces', serif;
+    color: var(--Dark-cyan);
+    font-weight: bold;
+    margin-left: 1.1em;
+    
+}
+
+.small-price{
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1em;
+    margin-left: 3em;
+    text-decoration: line-through;
+    opacity: .7;
+    
+}
+
+button{
+    width: 20em;
+    height: 3.5em;
+    padding: 1em;
+    margin-left: 2.8em;
+    border-radius: 10px;
+    border: none;
+    background: var(--Dark-cyan);
+    color: var(--White);
+    font-weight: 700;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button img{
+    margin-right: 15px;
+    
 }
