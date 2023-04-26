@@ -27,15 +27,15 @@ body{
     grid-template-rows: 1.5fr 2.8fr 3.5fr 2.2fr 2.5fr;
     gap: 5px;
     background: var(--White);
-    width: 15vw;
-    height:45vh;
+    width: 260px;
+    height:380px;
     border-radius: 0px 10px 10px 0;
 }
 
 .img{
     display: flex;
-    width: 15vw;
-    height: 45vh;
+    width: 260px;
+    height:380px;
 }
 
 .img img{
@@ -47,27 +47,24 @@ body{
 }
 
 .perfume{
-    margin-top: 2.2em;
-    margin-left: 2.5em;
+    margin: 2.5em 0 0 3em;
     font-family: 'Montserrat', sans-serif;
-    opacity: .7;
-    font-weight: 500;
-    font-size: .5em;
+    opacity: .5;
+    font-weight: 700;
+    font-size: .55em;
     letter-spacing: .1em;
 }
 
 .title{
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-family: 'Fraunces', serif;
-    margin: 0 2em 0 .8em;
+    margin: .2em 2em 0 1em;
     line-height: 1.2em;
 }
 
 .description{
     font-size: .7em;
-    margin: 0 1.7em 0 1.9em;
-    padding-top: 1.5em;
-    padding-right: 1em;
+    padding: 1.5em 3.5em 0 2.5em;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5em;
     opacity: .6;
@@ -78,12 +75,11 @@ body{
 }
 
 .big-price{
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-family: 'Fraunces', serif;
     color: var(--Dark-cyan);
     font-weight: bold;
-    margin-left: .8em;
-    padding-top: .4em;
+    padding: .2em 0 0 1.3em;
 }
 
 .small-price{
@@ -96,16 +92,16 @@ body{
 }
 
 button{
-    width: 19.5em;
+    width: 20em;
     height: 1.5em;
     padding: 2em 0;
-    margin-left: 2.4em;
-    border-radius: 10px;
+    margin: -.5em 0 0 3.2em;
+    border-radius: 6px;
     border: none;
     background: var(--Dark-cyan);
     color: var(--White);
     font-weight: 700;
-    font-size: .55em;
+    font-size: .6em;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     display: flex;
