@@ -50,8 +50,8 @@ body{
     margin: 2.5em 0 0 3em;
     font-family: 'Montserrat', sans-serif;
     opacity: .5;
-    font-weight: 700;
-    font-size: .55em;
+    font-weight: 800;
+    font-size: .59em;
     letter-spacing: .1em;
 }
 
@@ -67,7 +67,7 @@ body{
     padding: 1.5em 3.5em 0 2.5em;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5em;
-    opacity: .6;
+    opacity: .7;
 }
 
 .prices{
@@ -83,10 +83,10 @@ body{
 }
 
 .small-price{
-    font-size: .6em;
+    font-size: .65em;
     font-family: 'Montserrat', sans-serif;
-    padding-top: 1.7em;
-    margin-left: 2.5em;
+    padding-top: 1.3em;
+    margin-left: 1.5em;
     text-decoration: line-through;
     opacity: .7;
 }
@@ -109,6 +109,10 @@ button{
     align-items: center;
 }
 
+button:hover{
+    background: var(--Very-dark-blue);
+}
+
 .button img{
     margin-right: 10px;
     
@@ -117,4 +121,71 @@ button{
 .icon{
     width: 1.1em;
     height: 1.2em;
+}
+
+@media only screen and (max-width: 550px){
+
+    .container{
+    display: grid;
+    min-height: 0vh;
+    margin-top: 30px;
+   }
+
+   .img img{
+    border-radius: 10px 10px 0px 0px;
+}
+   .information{
+    border-radius: 0px 0px 10px 10px;
+    width: 300px;
+   }
+
+   .img{
+    width: 300px;
+    height: 235px;
+
+   }
+}
+
+@media only screen and (max-width: 450px){
+    .img{
+        width: 340px;
+        height: 250px;
+       }
+       .information{
+        width: 340px;
+        height: 420px;
+       }
+
+       .title{
+        font-size: 1.6em;
+       }
+       .perfume{
+        font-size: .8em;
+        margin: 25px 0 0 27px;
+       }
+
+       .description{
+        font-size: .79em;
+        margin-top: -20px;
+        opacity: .8;
+       }
+
+       .big-price{
+        font-size: 2em;
+        margin: -25px 0 0 -13px;
+       }
+
+       .small-price{
+        font-size: .8em;
+        margin-top: -22px;
+       }
+
+       button{
+        margin: -30px 0 0px 26px;
+        width: 21em;
+        font-size: .8em;
+        
+       }
+
+       
 }
